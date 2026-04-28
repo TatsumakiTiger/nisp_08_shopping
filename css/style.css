@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+nav {
+  background: #2c3e50;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background: #3498db;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+  color: #27ae60;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.btn-danger {
+  background: #e74c3c;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+.btn-success {
+  background: #27ae60;
+}
+
+.btn-success:hover {
+  background: #219a52;
+}
+
+/* Koszyk i zamówienie */
+.cart-item, .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+#cart-total, #order-total {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+#order-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+}
+
+#order-form input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#order-form button {
+  padding: 0.8rem;
+}
